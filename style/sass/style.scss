@@ -1,0 +1,202 @@
+@import "normalize";
+@import "reset";
+
+$black: #2b2b2b;
+$gray: #555555;
+$purple: #6c63ff;
+$purple-dark: #4a44ba;
+$purple-light: #d7d4ff;
+$white: #ffffff;
+$background: #f9f9f9;
+$merrieather: "Merriweather", sans-serif;
+$lato: "Lato", sans-serif;
+
+#main {
+  #main__container {
+    background: $purple-light;
+    #main__content {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 0 10px;
+      #main__info {
+        flex: 1;
+        h1 {
+          font-family: $merrieather;
+          font-weight: 400;
+          color: $black;
+          line-height: 48px;
+          font-size: 2.25rem;
+        }
+        p {
+          font-family: $lato;
+          font-weight: 400;
+          color: $gray;
+          line-height: 32px;
+          font-size: 1.1875rem;
+          margin-top: 20px;
+          margin-bottom: 40px;
+        }
+        a {
+          font-family: $merrieather;
+          font-weight: 700;
+          font-size: 20px;
+          color: $white;
+          padding: 14px 50px 14px 50px;
+          background: $purple;
+          border-radius: 10px;
+          transition: 0.2s ease-in;
+          &:hover {
+            background: $purple-dark;
+          }
+        }
+      }
+      #main__image {
+        img {
+          max-width: 100%;
+          padding: 60px 0;
+        }
+      }
+    }
+  }
+
+  #central {
+    background: $background;
+    #central__container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding: 100px 0;
+      .card {
+        flex: 1 1 300px;
+        max-width: 300px;
+        background: $white;
+        border-radius: 10px;
+        box-shadow: 1px 2px 16px 8px rgba(0, 0, 0, 0.14);
+        .card__header {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          height: 200px;
+          background: $purple;
+        }
+        .card__title {
+          padding: 24px 30px;
+          h2 {
+            font-family: $merrieather;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: $black;
+          }
+        }
+        .card__description {
+          padding: 0 30px 24px 30px;
+          p {
+            font-family: $lato;
+            font-weight: 400;
+            font-size: 1.125rem;
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+
+  #contact {
+    background: $purple-light;
+    #contact__container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 0;
+      h2 {
+        font-family: $merrieather;
+        font-weight: 400;
+        font-size: 32px;
+        padding-bottom: 60px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 500px;
+        align-items: center;
+        input {
+            width: 100%;
+        }
+        .input {
+          padding: 20px 15px;
+          font-size: 24px;
+          font-family: $lato;
+          font-weight: 400;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+        }
+        #contact__message {
+          width: 100%;
+          height: 200px;
+          margin-bottom: 30px;
+        }
+        button {
+          width: 100%;
+          font-family: $lato;
+          font-weight: 400;
+          font-size: 1.25rem;
+          color: $white;
+          background: $purple;
+          border-radius: 10px;
+          text-align: center;
+          padding: 15px 0;
+          outline: none;
+          border: none;
+          transition: 0.2s ease-in;
+          cursor: pointer;
+          &:hover {
+            background: $purple-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  text-align: center;
+  background: $purple;
+  padding: 20px 0;
+  p {
+    padding: 0 10px;
+    color: $white;
+    font-family: $merrieather;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 787px) {
+  #main {
+    #main__container {
+      #main__content {
+        flex-direction: column;
+        #main__info {
+          padding-top: 50px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
