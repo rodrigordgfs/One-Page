@@ -1,0 +1,179 @@
+#main #main__container {
+  background: #D7D4FF;
+}
+#main #main__container #main__content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 10px;
+}
+#main #main__container #main__content #main__info {
+  flex: 1;
+}
+#main #main__container #main__content #main__info h1 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  color: #2B2B2B;
+  line-height: 48px;
+  font-size: 2.25rem;
+}
+#main #main__container #main__content #main__info p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #555555;
+  line-height: 32px;
+  font-size: 1.1875rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#main #main__container #main__content #main__info a {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
+  padding: 14px 50px 14px 50px;
+  background: #6C63FF;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+}
+#main #main__container #main__content #main__info a:hover {
+  background: #4A44BA;
+}
+#main #main__container #main__content #main__image {
+  flex-bassis: 500px;
+}
+#main #main__container #main__content #main__image img {
+  max-width: 450px;
+  padding: 60px 0;
+}
+#main #central {
+  background: #F9F9F9;
+}
+#main #central #central__container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 100px 0;
+}
+#main #central #central__container .card {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 1px 2px 16px 8px rgba(0, 0, 0, 0.14);
+}
+#main #central #central__container .card .card__header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 200px;
+  background: #6C63FF;
+}
+#main #central #central__container .card .card__title {
+  padding: 24px 30px;
+}
+#main #central #central__container .card .card__title h2 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #2B2B2B;
+}
+#main #central #central__container .card .card__description {
+  padding: 0 30px 24px 30px;
+}
+#main #central #central__container .card .card__description p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #555555;
+}
+#main #contact {
+  background: #D7D4FF;
+}
+#main #contact #contact__container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+#main #contact #contact__container h2 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  padding-bottom: 60px;
+}
+#main #contact #contact__container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#main #contact #contact__container form .input {
+  width: 500px;
+  padding: 20px 15px;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
+}
+#main #contact #contact__container form .input:focus {
+  outline: none;
+}
+#main #contact #contact__container form #contact__message {
+  height: 200px;
+  margin-bottom: 30px;
+}
+#main #contact #contact__container form button {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #FFFFFF;
+  background: #6C63FF;
+  border-radius: 10px;
+  text-aling: center;
+  padding: 15px 0;
+  outline: none;
+  border: none;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+#main #contact #contact__container form button:hover {
+  background: #4A44BA;
+}
+
+#footer {
+  text-align: center;
+  background: #6C63FF;
+  padding: 20px 0;
+}
+#footer p {
+  padding: 0 10px;
+  color: #FFFFFF;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 787px) {
+  #main #main__container #main__content {
+    flex-direction: column;
+  }
+  #main #main__container #main__content #main__info {
+    padding-top: 50px;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
